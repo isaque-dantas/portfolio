@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+@plugin "daisyui";
+
+@theme {
+    --color-primary: #FFCF33;
+    --color-secondary: #380849;
+    --color-tertiary: #1C0026;
+    --color-white: #E7ECEF;
+    --color-gray-1: #D2CCE3;
+    --color-gray-2: #8B8796;
+    --color-black: #242119;
+    --font-mono: 'IBM Plex Mono', monospaced;
+    --font-sans: 'IBM Plex Sans', Helvetica, sans-serif;
+}
+
+@plugin "daisyui" {
+    themes: all;
+    /*--color-primary: #FFCF33;*/
+    /*--color-secondary: #380849;*/
+    /*--color-tertiary: #1C0026;*/
+    --color-white: #E7ECEF;
+    --color-gray-1: #D2CCE3;
+    --color-gray-2: #8B8796;
+    --color-black: #242119;
+}
+
+.text-h1 {
+    font-family: var(--font-mono);
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.text-h2 {
+    font-family: var(--font-sans);
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.text-h3 {
+    font-family: var(--font-sans);
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.text-h4 {
+    font-family: var(--font-sans);
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.text-h5 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.text-p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 150%;
+}
